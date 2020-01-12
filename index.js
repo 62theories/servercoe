@@ -30,6 +30,6 @@ app.get("/jan", async (req, res) => {
       })
       res.send(arr)
 })
-
+console.log(process.env.PORT)
 const PORT = process.env.PORT || 5000
 app.listen(PORT)
