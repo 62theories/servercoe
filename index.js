@@ -31,6 +31,6 @@ app.get("/jan", async (req, res) => {
       res.send(arr)
 })
 
-const PORT = process.env.PORT || 3090
-// console.log(PORT)
-app.listen(PORT)
+var server = app.listen(process.env.PORT || 3000, function() {
+      console.log("app is running on port", server.address().port)
+})
