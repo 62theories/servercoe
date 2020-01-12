@@ -4,7 +4,7 @@ const http = require("http")
 const app = express()
 
 app.get("/", (req, res) => {
-      console.log("test")
+      res.send({ test: "test" })
 })
 
 app.get("/jan", async (req, res) => {
